@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "belanosima-bold";
+  src: url("../fonts/Belanosima-Bold.ttf");
+}
+@font-face {
+  font-family: "belanosima-reg";
+  src: url("../fonts/Belanosima-Regular.ttf");
+}
+@font-face {
+  font-family: "belanosima-semi";
+  src: url("../fonts/Belanosima-SemiBold.ttf");
+}
+@font-face {
+  font-family: "jost";
+  src: url("../fonts/Jost-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "ubuntu-bold";
+  src: url("../fonts/UbuntuMono-Bold.ttf");
+}
+@font-face {
+  font-family: "ubuntu-boldi";
+  src: url("../fonts/UbuntuMono-BoldItalic.ttf");
+}
+@font-face {
+  font-family: "ubuntu-ita";
+  src: url("../fonts/UbuntuMono-Italic.ttf");
+}
+@font-face {
+  font-family: "ubuntu-reg";
+  src: url("../fonts/UbuntuMono-Regular.ttf");
+}
+body {
+  background-color: #F6F6F6;
+}
+
+nav {
+  align-content: space-between;
+}/*# sourceMappingURL=main.css.map */
