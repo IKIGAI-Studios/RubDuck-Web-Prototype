@@ -1,9 +1,46 @@
 @import 'variables';
+@import 'elements';
 
-body{
+html, body{
     background-color: $white;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 nav{
-    align-content: space-between;
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+h1{
+    font-family: 'jost';
+    font-size: 2.5rem;
+}
+
+.lp-container{
+    margin: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.blue-square{
+    margin: auto;
+    padding: 2rem 3rem;
+    border: 3px solid $primary;
+    border-radius: 20px;
+}
+
+.logo{
+    height: 4rem;
+}
+
+footer{
+    background-color: $primary;
+    min-height: 100px;
+    margin-top: auto;
 }

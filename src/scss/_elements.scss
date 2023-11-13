@@ -1,0 +1,48 @@
+@mixin btn-border-blue{
+    border-top: 0;
+    border-left: 0;
+    border-right: 2px solid $primary_hover;
+    border-bottom: 2px solid $primary_hover;
+}
+
+@mixin btn-border-yellow{
+    border-top:  1px solid $secondary;
+    border-left:  1px solid $secondary;
+    border-right: 2px solid $secondary;
+    border-bottom: 2px solid $secondary;
+}
+
+.btn-primary{
+    font-family: 'jost';
+    font-weight: 500;
+    font-size: large;
+    background-color: $primary;
+    color: $white;
+    padding: .7rem 3.6rem;    
+    border-radius: 10px;
+    @include btn-border-blue;
+    @include shadow1;
+}
+
+.btn-secondary{
+    font-family: 'jost';
+    font-weight: 500;
+    font-size: large;
+    background-color: $white;
+    color: $secondary;
+    padding: .7rem 3.6rem;    
+    border-radius: 10px;
+    @include btn-border-yellow;
+    @include shadow1;
+}
+
+input{
+    font-family: 'jost';
+    font-weight: 600;
+    color: $black;
+    border: 2px  solid $primary;
+    min-height: 1.9rem;
+    width: 30rem;
+    border-radius: 5px;
+    margin: 0 0 2rem 0;
+}
