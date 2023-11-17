@@ -16,9 +16,33 @@ nav{
     justify-content: space-between;
 }
 
+.nav-item{
+    color: $black;
+    font-family: 'jost';
+    font-weight: 500;
+    padding: 1rem;   
+    a{
+        color: $black;
+        text-decoration: none; 
+    }
+
+}
+
+.nav-item img{
+    height: 2rem;
+    width: auto;
+    border-radius: 5px;
+    margin: 0 1rem;
+}
+
 h1{
     font-family: 'jost';
     font-size: 2.5rem;
+}
+
+h3{
+    font-family: 'jost';
+    font-weight: 500;
 }
 
 .lp-container{
@@ -28,19 +52,36 @@ h1{
     align-content: center;
 }
 
-.blue-square{
-    margin: auto;
-    padding: 2rem 3rem;
-    border: 3px solid $primary;
-    border-radius: 20px;
+.language-logo{
+    height: 6rem;
+    width: auto;
+    margin: 0 3rem;
+}
+
+.language-name{
+    color: $black;
+    font-family: 'jost';
+    font-weight: 500;
 }
 
 .logo{
     height: 4rem;
 }
 
+.pfp{
+    border-style:solid;
+    border-color: $primary;
+    border-radius: 100%;
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+
 footer{
     background-color: $primary;
-    min-height: 100px;
     margin-top: auto;
+    color: $white;
+    font-family: 'jost';
+    padding: 1rem 3rem;
 }

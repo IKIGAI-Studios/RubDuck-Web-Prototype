@@ -1,3 +1,6 @@
+
+@import 'variables';
+
 @mixin btn-border-blue{
     border-top: 0;
     border-left: 0;
@@ -22,6 +25,8 @@
     border-radius: 10px;
     @include btn-border-blue;
     @include shadow1;
+
+    
 }
 
 .btn-secondary{
@@ -36,6 +41,18 @@
     @include shadow1;
 }
 
+.code{
+    background-color: #161B22;
+    font-family: 'ubuntu-reg';
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    min-width: 70%;
+    min-height: 120px;
+    color: $white;
+    padding: 1rem;
+}
+
 input{
     font-family: 'jost';
     font-weight: 600;
@@ -46,3 +63,30 @@ input{
     border-radius: 5px;
     margin: 0 0 2rem 0;
 }
+
+.blue-square{
+    margin: auto;
+    padding: 2rem 3rem;
+    border: 3px solid $primary;
+    border-radius: 20px;
+}
+
+.language-btn{
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.texto{
+    font-family: 'jost';
+    }
+
+.fondo{
+    background-repeat: repeat-x;
+    position:fixed;
+    width: 100%;
+    margin-bottom: 0;
+    z-index: -1;
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+

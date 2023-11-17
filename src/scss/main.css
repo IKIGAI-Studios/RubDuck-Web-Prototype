@@ -36,13 +36,96 @@
   align-items: center;
   justify-content: space-around;
 }
+.vertical-align a {
+  text-decoration: none;
+  color: #1E1E1E;
+}
 
 .right-align {
   display: flex;
   flex-direction: column;
   margin: auto;
-  align-items: end;
+  align-items: flex-end;
   justify-content: center;
+}
+
+.horizontal-align {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@font-face {
+  font-family: "belanosima-bold";
+  src: url("../fonts/Belanosima-Bold.ttf");
+}
+@font-face {
+  font-family: "belanosima-reg";
+  src: url("../fonts/Belanosima-Regular.ttf");
+}
+@font-face {
+  font-family: "belanosima-semi";
+  src: url("../fonts/Belanosima-SemiBold.ttf");
+}
+@font-face {
+  font-family: "jost";
+  src: url("../fonts/Jost-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "ubuntu-bold";
+  src: url("../fonts/UbuntuMono-Bold.ttf");
+}
+@font-face {
+  font-family: "ubuntu-boldi";
+  src: url("../fonts/UbuntuMono-BoldItalic.ttf");
+}
+@font-face {
+  font-family: "ubuntu-ita";
+  src: url("../fonts/UbuntuMono-Italic.ttf");
+}
+@font-face {
+  font-family: "ubuntu-reg";
+  src: url("../fonts/UbuntuMono-Regular.ttf");
+}
+.vertical-align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.vertical-align a {
+  text-decoration: none;
+  color: #1E1E1E;
+}
+
+.right-align {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.horizontal-align {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-primary {
@@ -75,6 +158,18 @@
   box-shadow: 0px 2px 4px rbga(0, 0, 0, 0.15);
 }
 
+.code {
+  background-color: #161B22;
+  font-family: "ubuntu-reg";
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  min-width: 70%;
+  min-height: 120px;
+  color: #F6F6F6;
+  padding: 1rem;
+}
+
 input {
   font-family: "jost";
   font-weight: 600;
@@ -84,6 +179,34 @@ input {
   width: 30rem;
   border-radius: 5px;
   margin: 0 0 2rem 0;
+}
+
+.blue-square {
+  margin: auto;
+  padding: 2rem 3rem;
+  border: 3px solid #3B5A9D;
+  border-radius: 20px;
+}
+
+.language-btn {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.texto {
+  font-family: "jost";
+}
+
+.fondo {
+  background-repeat: repeat-x;
+  position: fixed;
+  width: 100%;
+  margin-bottom: 0;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 20%;
+     object-position: 50% 20%;
 }
 
 html, body {
@@ -101,9 +224,32 @@ nav {
   justify-content: space-between;
 }
 
+.nav-item {
+  color: #1E1E1E;
+  font-family: "jost";
+  font-weight: 500;
+  padding: 1rem;
+}
+.nav-item a {
+  color: #1E1E1E;
+  text-decoration: none;
+}
+
+.nav-item img {
+  height: 2rem;
+  width: auto;
+  border-radius: 5px;
+  margin: 0 1rem;
+}
+
 h1 {
   font-family: "jost";
   font-size: 2.5rem;
+}
+
+h3 {
+  font-family: "jost";
+  font-weight: 500;
 }
 
 .lp-container {
@@ -113,19 +259,38 @@ h1 {
   align-content: center;
 }
 
-.blue-square {
-  margin: auto;
-  padding: 2rem 3rem;
-  border: 3px solid #3B5A9D;
-  border-radius: 20px;
+.language-logo {
+  height: 6rem;
+  width: auto;
+  margin: 0 3rem;
+}
+
+.language-name {
+  color: #1E1E1E;
+  font-family: "jost";
+  font-weight: 500;
 }
 
 .logo {
   height: 4rem;
 }
 
+.pfp {
+  border-style: solid;
+  border-color: #3B5A9D;
+  border-radius: 100%;
+  width: 15rem;
+  height: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 20%;
+     object-position: 50% 20%;
+}
+
 footer {
   background-color: #3B5A9D;
-  min-height: 100px;
   margin-top: auto;
+  color: #F6F6F6;
+  font-family: "jost";
+  padding: 1rem 3rem;
 }/*# sourceMappingURL=main.css.map */
