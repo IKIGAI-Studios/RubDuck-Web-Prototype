@@ -18,13 +18,16 @@
     <div class="right-align">
     <div class="blue-square">
         <h1>Sign Up</h1>
-        <form action="" method="">
+        <form action="" method="" id="formSignUp">
             <div class="vertical-align">
-                <input type="text" name="username">
-                <input type="text" name="email">
-                <input type="password" name="pass">
+                <span class="error" id="errorName"></span>
+                <input type="text" name="username" id="signUpName" placeholder="Username">
+                <span class="error" id="errorEmail"></span>
+                <input type="text" name="email" id="signUpEmail" placeholder="Email">
+                <span class="error" id="errorPass"></span>
+                <input type="password" name="pass" id="signUpPass" placeholder="Password">
    
-                <button class="btn-primary"  onclick="window.open('../index.html', '_blank')">Registrarme</button>
+                <button class="btn-primary"  id="btnSignUp">Registrarme</button>
              </div>
         </form>
     </div>
@@ -55,4 +58,5 @@
     </div>
 </footer>
 </html>
+<script src="../src/js/validationsSignUp.js"></script>
 </html>

@@ -18,12 +18,14 @@
     <div class="right-align">
     <div class="blue-square">
         <h1>Login</h1>
-        <form action="" method="">
+        <form action="" method="" id="formLogin">
             <div class="vertical-align">
-                <input type="text" name="username">
-                <input type="password" name="pass">
+                <span class="error" id="errorLoginName"></span>
+                <input type="text" name="username" id="loginName" placeholder="Username">
+                <span class="error" id="errorLoginPass"></span>
+                <input type="password" name="pass" id="loginPass" placeholder="Password">
 
-                <button class="btn-primary"  onclick="window.open('../index.html', '_blank')">Ingresar</button>
+                <button class="btn-primary" id="btnLogin">Ingresar</button>
             </div>
         </form>
     </div>
@@ -56,4 +58,5 @@
     
 </footer>
 </html>
+<script src="../src/js/validationsLogin.js"></script>
 </html>
