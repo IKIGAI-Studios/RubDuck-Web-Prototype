@@ -55,6 +55,6 @@ function validarSignUp(){
 
 botonSignUp.addEventListener('click', function(){
     if(validarSignUp()){
-        window.location.href='../index.html';
+        window.location.href='./index.html';
     }
 })

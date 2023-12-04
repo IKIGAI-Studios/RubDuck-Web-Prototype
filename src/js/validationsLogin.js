@@ -42,6 +42,6 @@ function validarLogin(){
 
 botonLogin.addEventListener('click', function(){
     if(validarLogin()){
-        window.location.href='../index.html';
+        window.location.href='./index.html';
     }
 })
